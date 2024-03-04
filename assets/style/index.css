@@ -23,16 +23,18 @@ h2 {
     text-transform: uppercase;
     cursor: default;
     line-height: 1em;
+    height: 1em;
+    /* giving h2 a fixed height prevents the bug where the text jitters when you hover over it */
 }
 
 h2 span {
     display: inline-flex;
-    transition: 0.5s ease-in-out;
     filter: drop-shadow(0 0 15px var(--text-color));
 }
 
 h2 span + span {
     overflow: hidden;
+    /* display: inline-flex in the above CSS rule set and overflow:hidden here hide the 2nd span element in each h2*/
     letter-spacing: -1em;
     transition: letter-spacing 0.5s ease-in-out;
 }
