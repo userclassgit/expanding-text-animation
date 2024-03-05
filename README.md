@@ -53,7 +53,7 @@ h2 span {
 }
 ```
 
-We then target and style the 2nd ```span``` in ```h2```. set the overflow property to hidden. ```overflow: hidden```,  ```letter-spacing: -1em```, and```display: inline-flex``` which you saw in the above code snippet effectively hide the 2nd ```span``` in ```h2```. In other words, they hide all the letters except the first letter in each ```h2```. Also add a transition effect to letter-spacing so that we have a smooth animation when the value of letter-spacing changes.
+We then target and style the 2nd ```span``` in ```h2```. set the overflow property to hidden. ```overflow: hidden```,  ```letter-spacing: -1em```, and```display: inline-flex``` which you saw in the above code snippet effectively hide the 2nd ```span``` in ```h2```. In other words, they hide all the letters except the first letter in each ```h2```. Make sure you add a ```transition``` to ```letter-spacing``` so that we have a smooth animation when the value of ```letter-spacing``` changes.
 
 ```css
 h2 span + span {
@@ -72,4 +72,4 @@ h2:hover span + span {
 }
 ```
 
-And that’s how you create this cool text expansion effect. Hope you find this tutorial informative.
+And that’s how you create this cool text expansion effect. I hope you find this tutorial informative and helpful.
